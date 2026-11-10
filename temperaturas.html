@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Temperaturas - Mi sitio web</title>
+    <!-- Los estilos ahora vienen directamente de tu CSS general -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header>
+        <img src="harry.png" alt="Encabezado">
+    </header>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="#">Conóceme</a>
+                <ul>
+                    <li><a href="informacion.html">Información personal</a></li>
+                    <li><a href="pasatiempos.html">Pasatiempos</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Segunda parcial</a>
+                <ul>
+                    <li><a href="practica1.html">Práctica uno</a></li>
+                    <li><a href="posiciones.html">Posiciones</a></li>
+                    <li><a href="mundo digital.html">Mi mundo digital</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Tercera parcial</a>
+                <ul>
+                    <li><a href="temperaturas.html">Conversor de temperaturas</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <section>
+        <aside class="principal">
+            <h2>CONVERSOR DE TEMPERATURAS 🌡️</h2>
+            <p>Selecciona el tipo de conversión e ingresa el valor deseado.</p>
+
+            <div class="form-conversion">
+                <div class="form-group">
+                    <label for="temperatura">Temperatura:</label>
+                    <input type="number" id="temperatura" step="any" placeholder="Ingresa un valor">
+                </div>
+
+                <div class="form-group">
+                    <label for="tipoConversion">Tipo de conversión:</label>
+                    <select id="tipoConversion">
+                        <option value="cToF">Celsius a Fahrenheit</option>
+                        <option value="fToC">Fahrenheit a Celsius</option>
+                    </select>
+                </div>
+
+                <button type="button" class="btn-convertir" onclick="convertirTemperatura()">Convertir</button>
+
+                <div class="area-resultado" id="resultado"></div>
+            </div>
+        </aside>
+
+        <aside class="secundario">
+            <h2>FÓRMULAS</h2>
+            <p><strong>Celsius a Fahrenheit:</strong><br> (°C × 9/5) + 32</p>
+            <p><strong>Fahrenheit a Celsius:</strong><br> (°F - 32) × 5/9</p>
+        </aside>
+    </section>
+
+    <footer>
+        <img src="logo.png" alt="Logo UdeC">
+        <div>
+            <p><strong>Universidad de Colima</strong></p>
+            <p>Bachillerato 8</p>
+            <p>Programación en Internet 1</p>
+        </div>
+    </footer>
+
+    <!-- Vinculación del script JavaScript -->
+    <script src="temperaturas.js"></script>
+</body>
+</html>
