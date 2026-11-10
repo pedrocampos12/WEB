@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Práctica de Posiciones - Mi sitio web</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <img src="harry.png" alt="Encabezado">
+    </header>
+
+    <nav>
+    <ul>
+        <li>
+            <a href="#">Conóceme</a>
+            <ul>
+                <li><a href="informacion.html">Información personal</a></li>
+                <li><a href="pasatiempos.html">Pasatiempos</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Segunda parcial</a>
+            <ul>
+                <li><a href="practica1.html">Práctica uno</a></li>
+                <li><a href="posiciones.html">Posiciones</a></li>
+                <li><a href="mundo digital.html">Mi mundo digital</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Tercera parcial</a>
+            <ul>
+                <li><a href="temperaturas.html">Conversor de temperaturas</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+    <section>
+        <aside class="principal">
+            <h2>PRÁCTICA: PROPIEDAD POSITION EN CSS</h2>
+            <p>Demostración de los 5 valores principales de <code>position</code> según la guía de freeCodeCamp.</p>
+
+            <!-- 1. Position Static -->
+            <h3>1. Position: Static (Por defecto)</h3>
+            <div class="demo-container">
+                <div class="box box-orange static-box">Estático</div>
+                <div class="box box-blue">Normal</div>
+            </div>
+
+            <!-- 2. Position Relative -->
+            <h3>2. Position: Relative</h3>
+            <div class="demo-container">
+                <div class="box box-orange relative-box">Relativo (top: 20px, left: 30px)</div>
+                <div class="box box-blue">Normal</div>
+            </div>
+
+            <!-- 3. Position Absolute -->
+            <h3>3. Position: Absolute (Relativo al padre)</h3>
+            <div class="demo-container relative-parent">
+                <div class="box box-orange absolute-box">Absoluto (right: 10px, top: 10px)</div>
+                <div class="box box-blue">Normal</div>
+            </div>
+
+            <!-- 4. Position Fixed -->
+            <h3>4. Position: Fixed</h3>
+            <p>Mira la esquina inferior derecha de tu pantalla (caja verde fija).</p>
+            <div class="box box-green fixed-box">Fijo</div>
+
+            <!-- 5. Position Sticky -->
+            <h3>5. Position: Sticky</h3>
+            <p>Haz scroll hacia abajo en este contenedor para ver cómo se pega al top.</p>
+            <div class="scroll-container">
+                <div class="box box-orange sticky-box">Sticky (top: 0)</div>
+                <p>Contenido largo para hacer scroll...</p>
+                <p>Línea 1...</p>
+                <p>Línea 2...</p>
+                <p>Línea 3...</p>
+                <p>Línea 4...</p>
+                <p>Línea 5...</p>
+            </div>
+        </aside>
+
+        <aside class="secundario">
+            <h2>PROPIEDADES AUXILIARES</h2>
+            <ul>
+                <li><strong>top / bottom:</strong> Desplazamiento vertical.</li>
+                <li><strong>left / right:</strong> Desplazamiento horizontal.</li>
+                <li><strong>z-index:</strong> Controla la superposición de capas.</li>
+            </ul>
+        </aside>
+    </section>
+
+    <footer>
+        <img src="logo.png" alt="Logo UdeC">
+        <div>
+            <p><strong>Universidad de Colima</strong></p>
+            <p>Bachillerato 8</p>
+            <p>Programación en Internet 1</p>
+        </div>
+    </footer>
+</body>
+</html>
